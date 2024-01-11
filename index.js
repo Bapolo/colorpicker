@@ -89,7 +89,8 @@ window.addEventListener("DOMContentLoaded", () =>
 		 	paragrafo.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
 		 	paragrafo.style.borderRadius = "10px";
 		 	paragrafo.style.position = "absolute";
-		 	paragrafo.style.top = "20%";
+		 	paragrafo.style.top = "1%";
+		 	paragrafo.style.left = "2%";
 		 	paragrafo.style.transition = "0.2s ease-in-out";
 		 	document.querySelector("#container").appendChild(paragrafo) 
 	 	}, 5)
