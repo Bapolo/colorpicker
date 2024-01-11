@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Color Picker</title>
+	<link rel="styleSheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1 id="titulo"><i class="fa-solid fa-paintbrush"></i>  Color Picker</h1>
+		</header>
+
+		<main>
+			<section id="painel"></section>
+
+			<form>
+				<input type="range" name="primeiraCor" id="primeiraCor" min="0" max="255" value="35">
+				<input type="range" name="segundaCor" id="segundaCor" min="0" max="255" value="200">
+				<input type="range" name="terceiraCor" id="terceiraCor" min="0" max="255" value="3">
+			</form>
+
+			<p id="valorRGB">rgb (244, 234, 678)</p>
+
+			<button id="copiarCodigo">  <i class="fa-solid fa-copy"></i>  copiar código rgb</button>
+		</main>
+
+		<footer>
+			<p>Feito por Lord Voldemort (it's me <i class="fa-solid fa-face-laugh-wink"></i>)</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="index.js"></script>
+	<script src="https://kit.fontawesome.com/46db288b2a.js" crossorigin="anonymous"></script>
+</body>
+</html>
