@@ -85,6 +85,7 @@ window.addEventListener("DOMContentLoaded", () =>
 		 	paragrafo.style.color = "white";
 		 	paragrafo.style.fontSize = "1.2rem";
 		 	paragrafo.style.padding = "20px";
+		 	paragrafo.style.margin = "0px";
 		 	paragrafo.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
 		 	paragrafo.style.borderRadius = "10px";
 		 	paragrafo.style.position = "absolute";
