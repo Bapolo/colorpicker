@@ -90,7 +90,7 @@ window.addEventListener("DOMContentLoaded", () =>
 		 	paragrafo.style.borderRadius = "10px";
 		 	paragrafo.style.position = "absolute";
 		 	paragrafo.style.top = "20%";
-		 	paragrafo.style.transition = "all 0.2s ease";
+		 	paragrafo.style.transition = "0.2s ease-in-out";
 		 	document.querySelector("#container").appendChild(paragrafo) 
 	 	}, 5)
 	 
