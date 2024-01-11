@@ -7,8 +7,8 @@ window.addEventListener("DOMContentLoaded", () =>
 	const saidaRGB = document.querySelector("#valorRGB");
 	const btnCopiarRGB = document.querySelector("#copiarCodigo");
 	const emojiSorriso = document.querySelector("footer i"); 
-	const container = document.querySelector("#container");
-	const paragrafo = document.createElement("p");;
+	
+	
 
 	
 	saidaRGB.innerHTML = "rgb(" + `${primeiraCor.value}, ${segundaCor.value}, ${terceiraCor.value}` + ")"
@@ -70,24 +70,32 @@ window.addEventListener("DOMContentLoaded", () =>
 
 			// Exibe uma mensagem ou executa outra lógica após a cópia (opcional)
 			console.log("Valor copiado para a área de transferência: ", valorRGB);
-			setTimeout(mostrarNotificacaoNaTela, 500);
-			container.removeChild(paragrafo);
+			mostrarNotificacaoNaTela();
+			
 			
 
 	 	 })
 
 	 function mostrarNotificacaoNaTela()
 	 {
-	 	
-	 	paragrafo.innerHTML = "<i class='fa-solid fa-check'></i> RGB copiado!";
-	 	paragrafo.style.color = "white";
-	 	paragrafo.style.fontSize = "1.2rem";
-	 	paragrafo.style.padding = "20px";
-	 	paragrafo.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-	 	paragrafo.style.borderRadius = "10px";
-	 	paragrafo.style.position = "absolute";
-	 	paragrafo.style.top = "20%";
-	 	container.appendChild(paragrafo) 
+	 	const paragrafo = document.createElement("p");
+
+	 	setTimeout(() => {
+	 		paragrafo.innerHTML = "<i class='fa-solid fa-check'></i> RGB copiado!";
+		 	paragrafo.style.color = "white";
+		 	paragrafo.style.fontSize = "1.2rem";
+		 	paragrafo.style.padding = "20px";
+		 	paragrafo.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+		 	paragrafo.style.borderRadius = "10px";
+		 	paragrafo.style.position = "absolute";
+		 	paragrafo.style.top = "20%";
+		 	paragrafo.style.transition = "all 0.2s ease";
+		 	document.querySelector("#container").appendChild(paragrafo) 
+	 	}, 5)
+	 
+	 	setTimeout(() => {
+      		document.querySelector("#container").removeChild(paragrafo);
+    	}, 2000);
 	 	
 	 }
 	 
