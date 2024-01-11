@@ -52,8 +52,8 @@ main
 	margin-bottom: 1.6rem;
 	border-radius: 10px;
 	outline: none;
-	border: 0.01px solid rgba(20, 20, 20, 0.3);
-	transition: all 0.5s ease-in-out;
+	border: 0.3px solid rgba(20, 20, 20, 0.3);
+	transition: all 0.2s ease-in-out;
 }
 
 form
@@ -112,6 +112,7 @@ footer
 .fa-face-laugh-wink
 {
 	color: rgb(255, 221, 51);
+	transition: color 0.2s ease-in-out;
 }
 
 .fa-check

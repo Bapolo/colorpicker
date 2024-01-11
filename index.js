@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", () =>
 	const terceiraCor = document.querySelector("#terceiraCor");
 	const saidaRGB = document.querySelector("#valorRGB");
 	const btnCopiarRGB = document.querySelector("#copiarCodigo");
+	const emojiSorriso = document.querySelector("footer i"); 
 	const container = document.querySelector("#container");
 	const paragrafo = document.createElement("p");;
 
@@ -17,6 +18,7 @@ window.addEventListener("DOMContentLoaded", () =>
 	 
 		 	painel.style.backgroundColor = "rgb(" + `${primeiraCor.value}, ${segundaCor.value}, ${terceiraCor.value}` + ")"
 		 	saidaRGB.innerHTML = painel.style.backgroundColor
+		 	emojiSorriso.style.color = painel.style.backgroundColor
 	 	}
 
 	) 	
@@ -27,6 +29,7 @@ window.addEventListener("DOMContentLoaded", () =>
 	 
 		 	painel.style.backgroundColor = "rgb(" + `${primeiraCor.value}, ${segundaCor.value}, ${terceiraCor.value}` + ")"
 		 	saidaRGB.innerHTML = painel.style.backgroundColor
+		 	emojiSorriso.style.color = painel.style.backgroundColor
 	 	}
 	) 	
 
@@ -36,6 +39,7 @@ window.addEventListener("DOMContentLoaded", () =>
 	 
 		 	painel.style.backgroundColor = "rgb(" + `${primeiraCor.value}, ${segundaCor.value}, ${terceiraCor.value}` + ")"
 		 	saidaRGB.innerHTML = painel.style.backgroundColor
+		 	emojiSorriso.style.color = painel.style.backgroundColor
 	 	}
 	) 	
 
@@ -82,7 +86,7 @@ window.addEventListener("DOMContentLoaded", () =>
 	 	paragrafo.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
 	 	paragrafo.style.borderRadius = "10px";
 	 	paragrafo.style.position = "absolute";
-	 	paragrafo.style.top = "40%";
+	 	paragrafo.style.top = "20%";
 	 	container.appendChild(paragrafo) 
 	 	
 	 }
