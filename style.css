@@ -47,7 +47,7 @@ main
 {
 	width: 98%;
 	height: 150px;
-	background: yellow;
+	background: rgb(255, 221, 51);
 	margin-bottom: 1.6rem;
 	border-radius: 10px;
 	border: none;

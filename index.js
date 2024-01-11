@@ -7,21 +7,36 @@ window.addEventListener("DOMContentLoaded", () =>
 	const saidaRGB = document.querySelector("#valorRGB");
 	const btnCopiarRGB = document.querySelector("#copiarCodigo");
 
-	painel.style.backgroundColor = "red";
+	
+	saidaRGB.innerHTML = painel.style.backgroundColor
 
-	 primeiraCor.addEventListener("input", () =>
+	 primeiraCor.addEventListener("input", () => 
+	 	{
 	 
-	 	painel.style.backgroundColor = "rgb(" + `${primeiraCor.value}, ${segundaCor.value}, ${terceiraCor.value}` + ")"
+		 	painel.style.backgroundColor = "rgb(" + `${primeiraCor.value}, ${segundaCor.value}, ${terceiraCor.value}` + ")"
+		 	saidaRGB.innerHTML = painel.style.backgroundColor
+	 	}
+
 	) 	
 
 	 segundaCor.addEventListener("input", () =>
 	 
-	 	painel.style.backgroundColor = "rgb(" + `${primeiraCor.value}, ${segundaCor.value}, ${terceiraCor.value}` + ")"
+	 	{
+	 
+		 	painel.style.backgroundColor = "rgb(" + `${primeiraCor.value}, ${segundaCor.value}, ${terceiraCor.value}` + ")"
+		 	saidaRGB.innerHTML = painel.style.backgroundColor
+	 	}
 	) 	
 
 	 terceiraCor.addEventListener("input", () =>
 	 
-	 	painel.style.backgroundColor = "rgb(" + `${primeiraCor.value}, ${segundaCor.value}, ${terceiraCor.value}` + ")"
+	 	{
+	 
+		 	painel.style.backgroundColor = "rgb(" + `${primeiraCor.value}, ${segundaCor.value}, ${terceiraCor.value}` + ")"
+		 	saidaRGB.innerHTML = painel.style.backgroundColor
+	 	}
 	) 	
+
+
 	 
 })
