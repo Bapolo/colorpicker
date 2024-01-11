@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", () =>
 	const saidaRGB = document.querySelector("#valorRGB");
 	const btnCopiarRGB = document.querySelector("#copiarCodigo");
 	const emojiSorriso = document.querySelector("footer i"); 
+	const paragrafo = document.querySelector("#paragrafo");
 	
 	
 
@@ -78,25 +79,14 @@ window.addEventListener("DOMContentLoaded", () =>
 
 	 function mostrarNotificacaoNaTela()
 	 {
-	 	const paragrafo = document.createElement("p");
-
-	 	setTimeout(() => {
-	 		paragrafo.innerHTML = "<i class='fa-solid fa-check'></i> RGB copiado!";
-		 	paragrafo.style.color = "white";
-		 	paragrafo.style.fontSize = "1.2rem";
-		 	paragrafo.style.padding = "20px";
-		 	paragrafo.style.margin = "0px";
-		 	paragrafo.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-		 	paragrafo.style.borderRadius = "10px";
-		 	paragrafo.style.position = "absolute";
-		 	paragrafo.style.top = "1%";
-		 	paragrafo.style.left = "2%";
-		 	paragrafo.style.transition = "0.2s ease-in-out";
-		 	document.querySelector("#container").appendChild(paragrafo) 
+	 
+	 	setTimeout(() =>
+	 	{
+	 		paragrafo.style.opacity = "1";
 	 	}, 5)
 	 
 	 	setTimeout(() => {
-      		document.querySelector("#container").removeChild(paragrafo);
+      		paragrafo.style.opacity = "0";
     	}, 2000);
 	 	
 	 }
